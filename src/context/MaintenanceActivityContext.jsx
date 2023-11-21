@@ -29,7 +29,6 @@ export default function MaintenanceActivityContextProvider({children}) {
       const data = await MaintenanceActivityRepository.getAllActivities();
       setActivities(data);
       setLoading(false);
-      console.log('MUIEE');
     } catch (err) {
       console.log(err);
       setError(err);
