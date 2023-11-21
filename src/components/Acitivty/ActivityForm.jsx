@@ -36,7 +36,7 @@ const ActivityForm = ({initialValues, onSubmitAction, actionButtonTitle}) => {
       />
       <View style={styles.dropdownWrapper}>
         <SelectDropdown
-          data={motorcycles.map(m => m.manufacturer + m.model)}
+          data={motorcycles.map(m => m.manufacturer + ' ' + m.model)}
           onSelect={handleChange('motorcycle')}
           defaultButtonText="Select a motorcycle"
           buttonStyle={styles.dropdown1BtnStyle}
